@@ -32,6 +32,6 @@ jobs:\
           git pull origin main\
           # Restart chatbot inside venv\
           pkill -f "python chatbot.py" || true\
-          nohup ~/chatbot_comp7940/venv/python chatbot.py > app.log 2>&1 &\
+          nohup ~/chatbot_comp7940/python chatbot.py > app.log 2>&1 &\
           EOF\
 }
